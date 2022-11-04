@@ -1,0 +1,124 @@
+/*=========================================================*/
+/* Variables (color scheme)*/
+:root {
+    --background: #21262e;
+    --backgroundtop: #002f52;
+    --font: #cccccc;
+    --border: #5d5f70;
+    --accent1: #313b3f;
+    --accent2: #1f2527;
+    --accent3: #606783;
+}
+
+/*=========================================================*/
+/* divs */
+* {
+    margin: 0; 
+    padding: 0;
+  }
+
+  div#main-content {
+    padding-top: 50px; 
+    padding-bottom: 100px; 
+    margin: auto;
+    width: min-content;
+    min-width: 300px;
+  }
+  div#bannerimage {
+    width: 100%;
+    background-image: url(images/banner.PNG);
+    height: 271px;
+    background-color: purple;
+    background-position: center;
+  }
+
+/*=========================================================*/
+/* Main */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    background-color: var(--background);
+    color: var(--font);
+}
+
+
+/*=========================================================*/
+/* TABLES */
+table {
+    border-collapse: separate;
+    border-color: var(--accent1);
+    border-spacing: 1px;
+    
+}
+/* Table Headers */
+th {
+    border: 1px solid var(--accent1);
+    background-color: var(--accent1);
+    color: var(--font);
+    font-variant-caps: all-small-caps;
+    font-size: xx-large;
+    padding: 8px;
+    min-width: 10px;
+    white-space: nowrap;
+}
+/* Table content */
+td {
+    border: 1px solid var(--accent1);
+    background-color: var(--accent2);
+    color: var(--font);
+    font-weight: 600;
+    padding: 6px;
+    white-space: nowrap;
+}
+
+table.buttons {
+    border-collapse: collapse;
+}
+th.buttons {
+    border: 0px;
+    background-color: var(--backgroundtop);
+    color: var(--font);
+    font-variant-caps: all-small-caps;
+    font-size: x-large;
+}
+td.buttons {
+    background-color: var(--backgroundtop);
+    color: var(--font);
+    font-weight: 600;
+}
+
+/*=========================================================*/
+/* Links */
+ /* unvisited link */
+a:link {
+     color: rgb(158, 196, 207);
+     text-decoration:none;
+}
+/* visited link */
+a:visited {
+    color: rgb(151, 139, 189);
+}
+/* mouse over link */
+a:hover {
+    color: rgb(243, 193, 255);
+} 
+/* selected link */
+a:active {
+    color: rgb(158, 255, 210);
+} 
+
+
+/*=========================================================*/
+/* Input Fields */
+input {
+    padding: 5px;
+    border: 1px solid var(--border);
+    background-color: var(--accent1);
+    color: var(--font);
+}
+button {
+    padding: 5px;
+    border: 1px solid var(--border);
+    background-color: var(--accent1);
+    color: var(--font);
+}
